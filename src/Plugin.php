@@ -24,7 +24,7 @@ class Plugin implements PluginInterface
 
         $composer->getDownloadManager()->setDownloader(
             "kbfs",
-            new KbfsDownloader($io, $composer->getConfig(), $executor, $fs)
+            new KbfsDownloader($io, $composer->getConfig(), $composer->getEventDispatcher())
         );
     }
 }
