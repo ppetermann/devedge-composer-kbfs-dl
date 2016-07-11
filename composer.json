@@ -1,0 +1,20 @@
+{
+    "name": "devedge/composer-kbfs-dl",
+    "license": "MIT",
+    "type": "composer-plugin",
+    "description": "a plugin that uses kbfs to get releases - required for packages distributed that way",
+    "require": {
+        "composer-plugin-api": "^1.0"
+    },
+    "require-dev": {
+        "composer/composer": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Devedge\\KbfsDl\\": "src/"
+        }
+    },
+    "extra": {
+        "class": "Devedge\\KbfsDl\\Plugin"
+    }
+}
